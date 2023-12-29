@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Lato&family=Open+Sans:wght@300&family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.outer-box {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
+}
+
+.inner-box {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  padding: 20px 40px;
+  transform: translateY(-50%);
+  background: linear-gradient(to top left, #ffffffff, #ffffff33);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #2773a5;
+  z-index: 2;
+}
+
+.signUp-header h1 {
+  font-size: 1.9rem;
+  color: #212121;
+  text-align: center;
+}
+.signUp-header p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.signUp-body {
+  margin: 20px 0;
+}
+
+.signUp-body p {
+  margin: 10px 0;
+}
+
+.signUp-body p label {
+  display: block;
+  font-weight: bold;
+}
+
+.signUp-body p input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.signUp-body p input[type="submit"] {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.signUp-body p input[type="submit"]:hover {
+  background-color: #118adb;
+}
+
+.signUp-footer {
+  text-align: center;
+  color: #555;
+}
+
+.signUp-footer p a {
+  color: #118adb;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(to top right, #ffffff33, #ffffffff);
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.c1 {
+  top: 100px;
+  left: 40px;
+  animation: bubble 4s ease-in-out infinite;
+}
+
+.c2 {
+  bottom: 200px;
+  right: 50px;
+  animation: bubble 4s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bubble {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
